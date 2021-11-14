@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="arduino_sub" type="arduino_sub_node" name="arduino_sub" output="screen"/>
+	<node pkg="rosserial_python" type="serial_node.py" name="serial_node" args="/dev/ttyACM0"/>
+</launch>
